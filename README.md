@@ -14,7 +14,7 @@ Create beautiful, customizable SVG loading animations for your web projects. Cho
 
 ## 🚀 Getting Started
 
-Visit [tensorsvg.com](https://tensorsvg.com) to:
+Visit [tensor-svg-loaders.vercel.app](https://tensor-svg-loaders.vercel.app) to:
 
 1. Browse the gallery of loaders
 2. Customize colors and settings in the editor
@@ -23,7 +23,7 @@ Visit [tensorsvg.com](https://tensorsvg.com) to:
 
 ## 🎨 Interactive Editor
 
-Try our new [interactive editor](https://tensorsvg.com/editor) to:
+Try our new [interactive editor](https://tensor-svg-loaders.vercel.app/editor) to:
 - Preview animations in real-time
 - Customize colors and properties
 - Get instant code snippets
