@@ -1,0 +1,43 @@
+{
+  "name": "tensor-loaders",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Youssef Mansouri",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "rimraf .next && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "html-to-image": "^1.11.11",
+    "next": "15.0.2",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "rimraf": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "9.14.0",
+    "eslint-config-next": "15.0.2",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write ."
+    ],
+    "*.{json,css,md}": [
+      "prettier --write ."
+    ]
+  }
+}
