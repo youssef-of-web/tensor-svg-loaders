@@ -127,32 +127,36 @@ export default function Home() {
         <p className="text-lg text-center text-gray-600 mb-8">
           Beautiful, customizable SVG loading animations for your web projects
         </p>
-
-        <div className="flex justify-center items-center mb-8 space-x-4">
-          <div className="flex items-center">
-            <label className="text-gray-600 mr-3">Choose Color:</label>
-            <input
-              type="color"
-              value={selectedColor}
-              onChange={handleColorPickerChange}
-              className="w-12 h-8 rounded cursor-pointer"
-            />
-          </div>
-          <div className="flex items-center">
-            <label className="text-gray-600 mr-3">Hex Color:</label>
-            <input
-              type="text"
-              value={hexInput}
-              onChange={handleHexInputChange}
-              placeholder="#000000"
-              className="w-24 px-2 py-1 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-12 max-w-4xl mx-auto bg-white/50 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+          <div className="flex flex-row items-center gap-6 w-full md:w-auto">
+            <div className="flex items-center gap-4 w-full sm:w-auto">
+              <label className="text-gray-700 font-medium">Color:</label>
+              <input
+                type="color"
+                value={selectedColor}
+                onChange={handleColorPickerChange}
+                className="w-14 h-10 rounded-lg cursor-pointer border-2 border-gray-200 hover:border-blue-400 transition-colors"
+              />
+            </div>
+            <div className="flex items-center gap-4 w-full sm:w-auto">
+              <label className="text-gray-700 font-medium">Hex:</label>
+              <input
+                type="text"
+                value={hexInput}
+                onChange={handleHexInputChange}
+                placeholder="#000000"
+                className="w-32 px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-200 transition-all"
+              />
+            </div>
           </div>
           <button
             onClick={() => window.location.href = '/editor'}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all transform hover:scale-105 hover:shadow-lg w-full sm:w-auto"
           >
-            Open in Editor
+            <span>Open in Editor</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
           </button>
         </div>
 
