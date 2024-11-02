@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tensor SVG Loaders
 
-## Getting Started
+Create beautiful, customizable SVG loading animations for your web projects. Choose from 40+ stunning loaders, customize colors and sizes, and easily integrate them into your applications.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 40+ beautiful loading animations
+- Fully customizable (colors, sizes, etc.)
+- Zero dependencies
+- Lightweight SVG-based loaders
+- Easy integration with any framework
+- Interactive editor for customization
+- Copy SVG code or download as files
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit [tensorsvg.com](https://tensorsvg.com) to:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Browse the gallery of loaders
+2. Customize colors and settings in the editor
+3. Copy SVG code or download files
+4. Integrate into your project
 
-## Learn More
+## 🎨 Interactive Editor
 
-To learn more about Next.js, take a look at the following resources:
+Try our new [interactive editor](https://tensorsvg.com/editor) to:
+- Preview animations in real-time
+- Customize colors and properties
+- Get instant code snippets
+- Export optimized SVG files
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Simply copy the SVG code or download the file for your chosen loader and integrate it into your project. All loaders are pure SVG - no JavaScript required!
 
-## Deploy on Vercel
+## 📝 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License - feel free to use in personal and commercial projects.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues and pull requests.
+
+## 📫 Contact
+
+- GitHub: [github.com/youssef-of-web/tensor-svg-loaders](https://github.com/youssef-of-web/tensor-svg-loaders)
+- Creator: [Youssef Mansour](https://github.com/youssef-of-web)

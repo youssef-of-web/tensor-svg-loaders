@@ -1,5 +1,5 @@
 
-export const SITE_URL = "https://tensorsvg.com";
+export const SITE_URL = "https://tensor-svg-loaders.vercel.app";
 export const GITHUB_URL = "https://github.com/youssef-of-web/tensor-svg-loaders";
 export const MY_GITHUB_URL = "https://github.com/youssef-of-web";
 
@@ -22,8 +22,8 @@ export const TWITTER_HOME = {
     card: "summary_large_image",
     title: "Create Beautiful SVG Loading Animations ✨",
     description: "40+ customizable loading animations for modern web apps. Easy integration, zero dependencies. Try it now!",
-    site: "@tensorsvg",
-    creator: "@tensorsvg",
+    site: "@tensor-svg-loaders",
+    creator: "@tensor-svg-loaders",
     images: ['/og-image.png']
   } as const;
 
@@ -46,8 +46,8 @@ export const TWITTER_EDITOR = {
     card: "summary_large_image",
     title: "Create Your Own Loading Animation ✨",
     description: "Design custom SVG loaders in our interactive editor. Preview, customize, and export your animations.",
-    site: "@tensorsvg",
-    creator: "@tensorsvg",
+    site: "@tensor-svg-loaders",
+    creator: "@tensor-svg-loaders",
     images: ['/og-image-editor.png']
   } as const;
 

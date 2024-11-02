@@ -122,10 +122,10 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 text-gray-800 p-4 sm:p-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-bold text-center mb-4 animate-fade-in bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
-          Loading Animations Gallery
+          Tensor SVG Loaders
         </h1>
         <p className="text-lg text-center text-gray-600 mb-8">
-          Create stunning loading animations
+          Beautiful, customizable SVG loading animations for your web projects
         </p>
 
         <div className="flex justify-center items-center mb-8 space-x-4">

@@ -1,5 +1,6 @@
 "use client";
 
+import { GITHUB_URL } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -53,7 +54,7 @@ export default function Navbar() {
 
                 <div className="hidden md:flex items-center gap-3">
                     <Link
-                        href="https://github.com/youssefmansour/svg-loaders"
+                        href={`${GITHUB_URL}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center rounded-lg border bg-background px-3 py-2 text-sm font-medium transition-all hover:bg-accent hover:text-accent-foreground hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
@@ -86,7 +87,7 @@ export default function Navbar() {
                             <span className="ml-2 px-1.5 py-0.5 text-xs bg-green-100 text-green-700 rounded-full">New</span>
                         </Link>
                         <Link
-                            href="https://github.com/youssefmansour/svg-loaders"
+                            href={`${GITHUB_URL}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
