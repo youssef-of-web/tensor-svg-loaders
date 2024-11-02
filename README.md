@@ -44,4 +44,4 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 ## 📫 Contact
 
 - GitHub: [github.com/youssef-of-web/tensor-svg-loaders](https://github.com/youssef-of-web/tensor-svg-loaders)
-- Creator: [Youssef Mansour](https://github.com/youssef-of-web)
+- Creator: [Youssef Mansouri](https://github.com/youssef-of-web)
