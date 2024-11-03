@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    const [isAnimationsOpen, setIsAnimationsOpen] = useState(false);
     return (
         <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-16 items-center justify-between px-4 md:px-6 mx-auto">
@@ -29,7 +29,52 @@ export default function Navbar() {
                             Editor
                             <span className="px-1.5 py-0.5 text-xs bg-green-100 text-green-700 rounded-full">New</span>
                         </Link>
+                        <div className="relative">
+                            <button
+                                className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                                onClick={() => setIsAnimationsOpen(!isAnimationsOpen)}
+                            >
+                                Animations
+                                <span className="ml-2 px-1.5 py-0.5 text-xs bg-blue-100 text-blue-700 rounded-full">Fun</span>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    className={`h-4 w-4 ml-1 transition-transform duration-200 ${isAnimationsOpen ? 'rotate-180' : ''}`} 
+                                    fill="none" 
+                                    viewBox="0 0 24 24" 
+                                    stroke="currentColor"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            {isAnimationsOpen && (
+                                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                        <Link
+                                            href="/animations"
+                                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => {
+                                                setIsMenuOpen(false);
+                                                setIsAnimationsOpen(false);
+                                            }}
+                                        >
+                                            All Animations
+                                        </Link>
+                                        <Link
+                                            href="/animations/confetti"
+                                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => {
+                                                setIsMenuOpen(false);
+                                                setIsAnimationsOpen(false);
+                                            }}
+                                        >
+                                            Confetti
+                                        </Link>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </nav>
+                    
                 </div>
 
                 {/* Mobile Navigation */}
@@ -51,6 +96,7 @@ export default function Navbar() {
                         </svg>
                     </button>
                 </div>
+                
 
                 <div className="hidden md:flex items-center gap-3">
                     <Link
@@ -86,6 +132,50 @@ export default function Navbar() {
                             Editor
                             <span className="ml-2 px-1.5 py-0.5 text-xs bg-green-100 text-green-700 rounded-full">New</span>
                         </Link>
+                        <div className="relative">
+                            <button
+                                className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                                onClick={() => setIsAnimationsOpen(!isAnimationsOpen)}
+                            >
+                                Animations
+                                <span className="ml-2 px-1.5 py-0.5 text-xs bg-blue-100 text-blue-700 rounded-full">Fun</span>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    className={`h-4 w-4 ml-1 transition-transform duration-200 ${isAnimationsOpen ? 'rotate-180' : ''}`} 
+                                    fill="none" 
+                                    viewBox="0 0 24 24" 
+                                    stroke="currentColor"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            {isAnimationsOpen && (
+                                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                        <Link
+                                            href="/animations"
+                                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => {
+                                                setIsMenuOpen(false);
+                                                setIsAnimationsOpen(false);
+                                            }}
+                                        >
+                                            All Animations
+                                        </Link>
+                                        <Link
+                                            href="/animations/confetti"
+                                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => {
+                                                setIsMenuOpen(false);
+                                                setIsAnimationsOpen(false);
+                                            }}
+                                        >
+                                            Confetti
+                                        </Link>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                         <Link
                             href={`${GITHUB_URL}`}
                             target="_blank"

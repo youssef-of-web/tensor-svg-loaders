@@ -51,6 +51,25 @@ export const TWITTER_EDITOR = {
     images: ['/og-image-editor.png']
   } as const;
 
+  export const OPEN_GRAPH_CONFETTI = {
+    title: "Confetti Effects - Tensor SVG Loaders",
+    description: "Add celebratory confetti animations to your special moments",
+    url: `${SITE_URL}/animations/confetti`,
+    siteName: "Tensor SVG Loaders",
+    locale: "en_US", 
+    type: "website",
+    images: ['/og-image-confetti.png']
+  } as const;
+
+export const TWITTER_CONFETTI = {
+    card: "summary_large_image",
+    title: "Add Confetti Animations to Your Special Moments",
+    description: "Celebrate with Tensor SVG Loaders' confetti effects",
+    site: "@tensor-svg-loaders",
+    creator: "@tensor-svg-loaders",
+    images: ['/og-image-confetti.png']
+  } as const;
+
 
 
 export const NAVIGATION = {
