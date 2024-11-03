@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Editor - Tensor SVG Loaders",
     description: "Create and customize your own SVG loading animations in our interactive editor. Preview, customize, and export your loader.",
-    metadataBase: new URL(SITE_URL),
+    metadataBase: new URL(SITE_URL + "/editor"),
     icons: {
       icon: "/logo.svg",
     },

@@ -70,6 +70,26 @@ export const TWITTER_CONFETTI = {
     images: ['/og-image-confetti.png']
   } as const;
 
+  export const OPEN_GRAPH_ANIMATIONS = {
+    title: "Stunning Animations - Tensor SVG Loaders",
+    description: "Explore our collection of beautiful, ready-to-use animations to enhance your web applications.",
+    url: `${SITE_URL}/animations`,
+    siteName: "Tensor SVG Loaders",
+    locale: "en_US", 
+    type: "website",
+    images: ['/og-image-animations.png']
+  } as const;
+
+
+  export const TWITTER_ANIMATIONS = {
+    card: "summary_large_image",
+    title: "Explore Beautiful Animations - Tensor SVG Loaders",
+    description: "Discover our collection of stunning, ready-to-use animations to elevate your web applications.",
+    site: "@tensor-svg-loaders",
+    creator: "@tensor-svg-loaders",
+    images: ['/og-image-animations.png']
+  } as const;
+
 
 
 export const NAVIGATION = {

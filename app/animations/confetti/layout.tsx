@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Confetti Effects - Tensor SVG Loaders",
     description: "Add celebratory confetti animations to your special moments",
-    metadataBase: new URL(SITE_URL),
+    metadataBase: new URL(SITE_URL + "/animations/confetti"),
     icons: {
       icon: "/logo.svg",
     },
