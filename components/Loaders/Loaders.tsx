@@ -2597,11 +2597,138 @@ export const KubernetesPodLoader = ({ size = 40, primaryColor = "#3B82F6" }: Loa
             </circle>
         </g>
     </svg>
+)
+
+
+// Checkout Progress Loader
+export const CheckoutLoader = ({ size = 40, primaryColor = "#3B82F6" }: LoaderProps) => (
+    <svg width={size} height={size} viewBox="0 0 50 50">
+        <g fill="none" stroke={primaryColor} strokeWidth="2">
+            <path d="M10,25 L20,25 L25,35 L40,15">
+                <animate
+                    attributeName="stroke-dasharray"
+                    values="0,50;50,0;0,50"
+                    dur="2s"
+                    repeatCount="indefinite"
+                />
+            </path>
+            <circle cx="25" cy="25" r="20" strokeWidth="2">
+                <animate
+                    attributeName="stroke-dasharray"
+                    values="0,125.6;125.6,0;0,125.6"
+                    dur="2s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+        </g>
+    </svg>
 );
 
+// Payment Processing Loader
+export const PaymentLoader = ({ size = 40, primaryColor = "#3B82F6" }: LoaderProps) => (
+    <svg width={size} height={size} viewBox="0 0 50 50">
+        <g fill="none" stroke={primaryColor} strokeWidth="2">
+            <rect x="10" y="15" width="30" height="20" rx="2">
+                <animate
+                    attributeName="stroke-dasharray"
+                    values="0,100;100,0;0,100"
+                    dur="2s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+            <line x1="10" y1="25" x2="40" y2="25">
+                <animate
+                    attributeName="stroke-dasharray"
+                    values="0,30;30,0;0,30"
+                    dur="2s"
+                    repeatCount="indefinite"
+                />
+            </line>
+            <circle cx="35" cy="25" r="2">
+                <animate
+                    attributeName="fill"
+                    values="none;${primaryColor};none"
+                    dur="1s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+        </g>
+    </svg>
+);
 
+// Inventory Update Loader
+export const InventoryLoader = ({ size = 40, primaryColor = "#3B82F6" }: LoaderProps) => (
+    <svg width={size} height={size} viewBox="0 0 50 50">
+        <g fill="none" stroke={primaryColor} strokeWidth="2">
+            <rect x="10" y="10" width="10" height="30">
+                <animate
+                    attributeName="height"
+                    values="30;20;30"
+                    dur="1s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+            <rect x="25" y="10" width="10" height="30">
+                <animate
+                    attributeName="height"
+                    values="30;10;30"
+                    dur="1s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+            <rect x="40" y="10" width="10" height="30">
+                <animate
+                    attributeName="height"
+                    values="30;25;30"
+                    dur="1s"
+                    repeatCount="indefinite"
+                />
+            </rect>
+        </g>
+    </svg>
+);
 
-
+// Order Tracking Loader
+export const OrderTrackingLoader = ({ size = 40, primaryColor = "#3B82F6" }: LoaderProps) => (
+    <svg width={size} height={size} viewBox="0 0 50 50">
+        <g fill="none" stroke={primaryColor} strokeWidth="2">
+            <path d="M10,25 L40,25">
+                <animate
+                    attributeName="stroke-dasharray"
+                    values="0,30;30,0;0,30"
+                    dur="2s"
+                    repeatCount="indefinite"
+                />
+            </path>
+            <circle cx="15" cy="25" r="3">
+                <animate
+                    attributeName="fill"
+                    values="none;${primaryColor};none"
+                    dur="2s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            <circle cx="25" cy="25" r="3">
+                <animate
+                    attributeName="fill"
+                    values="none;${primaryColor};none"
+                    dur="2s"
+                    begin="0.5s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+            <circle cx="35" cy="25" r="3">
+                <animate
+                    attributeName="fill"
+                    values="none;${primaryColor};none"
+                    dur="2s"
+                    begin="1s"
+                    repeatCount="indefinite"
+                />
+            </circle>
+        </g>
+    </svg>
+);
 
 
 

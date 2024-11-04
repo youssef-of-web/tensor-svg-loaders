@@ -73,7 +73,11 @@ import {
   CloudUploadLoader,
   ServerRackLoader,
   KubernetesPodLoader,
-  CIPipelineLoader
+  CIPipelineLoader,
+  ShoppingCartLoader,
+  CheckoutLoader,
+  PaymentLoader,
+  InventoryLoader
 } from "@/components/Loaders/Loaders";
 
 export default function Home() {
@@ -233,7 +237,11 @@ export default function Home() {
             { component: CloudUploadLoader, name: "Cloud Upload" },
             { component: ServerRackLoader, name: "Server Rack" },
             { component: KubernetesPodLoader, name: "Kubernetes Pod" },
-            { component: CIPipelineLoader, name: "CI Pipeline" }
+            { component: CIPipelineLoader, name: "CI Pipeline" },
+            { component: ShoppingCartLoader, name: "Shopping Cart" },
+            { component: CheckoutLoader, name: "Checkout" },
+            { component: PaymentLoader, name: "Payment" },
+            { component: InventoryLoader, name: "Inventory" }
           ].map((loader, index) => (
             <div
               key={index}
